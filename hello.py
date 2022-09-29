@@ -7,4 +7,4 @@ def app(environ, start_response):
         ('Content-Length', str(len(dt)))
     ]
     start_response(status, response_headers)
-    return iter([ dt.encode('utf-8') ])
+    return iter ([dt.encode('utf-8')])
