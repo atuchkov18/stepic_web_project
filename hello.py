@@ -1,6 +1,6 @@
 def app(environ, start_response):
     qs = environ['QUERY_STRING']
-	ls = qs.split("&")
+    ls = qs.split("&")
     status = '200 OK'
     response_headers = [
         ('Content-type', 'text/plain'),
